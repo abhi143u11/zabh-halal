@@ -1,0 +1,709 @@
+{
+	"info": {
+		"_postman_id": "cc82505d-73c1-4012-b23b-b501569d199e",
+		"name": "dab7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/service",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order/data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/order/data",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"order",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Shredder",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "packaging",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "notes",
+							"value": "sdadas",
+							"type": "text"
+						},
+						{
+							"key": "payment",
+							"value": "وسيط بنكي",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "143",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "aaaa",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "order_type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "products",
+							"value": "{\"products\":[{\"product_id\":40 ,\"qty\":0,\"amount\":8},{\"product_id\":41,\"qty\":0,\"amount\":2},{\"product_id\":42,\"qty\":0,\"amount\":5}]}",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "sgdgf",
+							"type": "text"
+						},
+						{
+							"key": "power",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "8",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "hamdy",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "01095950406",
+							"type": "text"
+						},
+						{
+							"key": "city_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/orders",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "966010211000",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/cart",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "985225877488",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/register",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delorder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_id",
+							"value": "422",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dab7halal.waslney.com/api/delorder",
+					"protocol": "https",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"delorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "985225877488",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/login",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "about",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/about",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"about"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "966010211472",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dab7halal.waslney.com/api/logout",
+					"protocol": "https",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/verify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "985225877488",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "5248",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/users/verify",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/setting",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "hamdy",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "010021354564",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "order_id",
+							"value": "499",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/F:/hamdy/ddd.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/payments",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cities",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/cities",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "banks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Hy9xQg9T5OCOkW1ecFYm4MlWNWoGrfAc3osbj2gP2JO5WX7SfwQHeireLQex",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://dab7halal.waslney.com/api/banks",
+					"protocol": "http",
+					"host": [
+						"dab7halal",
+						"waslney",
+						"com"
+					],
+					"path": [
+						"api",
+						"banks"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
